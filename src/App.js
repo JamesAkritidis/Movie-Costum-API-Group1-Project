@@ -1,60 +1,27 @@
 import React, { useState, useEffect} from 'react';
+import DimitrisMovies from './components/DimitrisMovies';
+import client from './client'
 
 
-function App() {
-  const [movies, setMovies] = useState({});
-  const {REACT_APP_SPACE_ID, REACT_APP_ACCESS_TOKEN} = process.env;
-  const query =  `
-  {
-   moviesCollection {
-      items {
-        id,
-        title,
-        imdbRating,
-        genre,
-        poster {
-          url
-        },
-        trailer {
-          url
-        },
-        director,
-        cast
-      }
-    }
-  }
-  `;
 
-  useEffect(() => {
-    window
-    .fetch(`https://graphql.contentful.com/content/v1/spaces/${REACT_APP_SPACE_ID}/`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${REACT_APP_ACCESS_TOKEN}`,
-      },
-      body: JSON.stringify({ query })
-    })
-    .then((response) => response.json())
-    .then((results, errors) =>{ 
-    if (errors) {
-          console.log(errors);
-    }
-    setMovies(results.data.moviesCollection.items)
-    console.log(movies);
-  })
+  function App() {
 
-  }, [])
-
-  if (!movies) {
-    return "Loading...";
-  }
-
+    const [movies, setMovies] = useState([]);
+    useEffect(() => {
+      client
+        .getEntries({content_type:"movies"})
+        .then ((json) => {
+          setMovies(json.items)
+        })
+        .catch (() => console.log ("Well we tried"))
+  
+    }, [])
+    // console.log(movies)
   return (
     <div className="App">
       <h1>Hello</h1>
+      <DimitrisMovies movies={movies} setMovies={setMovies} />
     </div>
   );
 }
-
 export default App;
