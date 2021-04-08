@@ -13,7 +13,7 @@ import client from './client'
         .then ((json) => {
           setMovies(json.items)
         })
-        .catch (() => console.log ("Well we tried"))
+        .catch (() => console.log ("Well at least we tried"))
   
     }, [])
     // console.log(movies)
