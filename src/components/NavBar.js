@@ -12,6 +12,7 @@ const NavBar = () => {
             <h3><NavLink className="navigation-link" to='/singleca/ahmad'>Ahmad</NavLink></h3>
             <h3><NavLink className="navigation-link" to=''>Jans</NavLink></h3>
             <h3><NavLink className="navigation-link" to=''>Dimitris</NavLink></h3>
+            <h3><NavLink className="navigation-link" to=''>All Movies</NavLink></h3>
         </div>
     )
 }
