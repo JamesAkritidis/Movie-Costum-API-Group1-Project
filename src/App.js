@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { HashRouter as Router, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import client from './client'
 import SingleMovie from "./components/SingleMovie"
 import NavBar from "./components/NavBar"
@@ -30,8 +30,11 @@ import SingleCategory from "./components/SingleCategory"
             <Switch>
               <Route exact path="/" component={Landingpage} movies={movies}/>
               <Route exact path="/AllMovies" >
-                <SingleMovie movies={movies}/>
+                <AllMovies movies={movies}/>
               </Route>
+              <Route path="/SingleMovie/:id"> 
+              <SingleMovie movies={movies} />
+            </Route>
               <Route path="/SingleCategory/:person">
                 <SingleCategory movies={movies}/>
               </Route>
