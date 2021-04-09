@@ -1,6 +1,11 @@
 import React, { useState, useEffect} from 'react';
-import DimitrisMovies from './components/DimitrisMovies';
+import { HashRouter as Router, Switch } from 'react-router-dom'
 import client from './client'
+import SingleMovie from "./components/SingleMovie"
+import NavBar from "./components/NavBar"
+import Landingpage from "./components/Landingpage"
+import AllMovies from "./components/AllMovies"
+import SingleCategory from "./components/SingleCategory"
 
 
 
@@ -19,9 +24,21 @@ import client from './client'
     // console.log(movies)
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <DimitrisMovies movies={movies} setMovies={setMovies} />
-    </div>
+        <Router>
+          <NavBar />
+          <div className="main-wrapper">
+            <Switch>
+              <Route exact path="/" component={Landingpage} movies={movies}/>
+              <Route exact path="/AllMovies" >
+                <SingleMovie movies={movies}/>
+              </Route>
+              <Route path="/SingleCategory/:person">
+                <SingleCategory movies={movies}/>
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </div>
   );
 }
 export default App;
