@@ -5,12 +5,12 @@ import Post from './Post';
 function SingleCategory({movies}) {
 
     const {person} = useParams ();
-    console.log(person)
+    // console.log(person)
 
-    const getSingleMovie = movies.filter (el => el.fields.Categories === person);
-    console.log(getSingleMovie)
-    console.log(movies)
-    console.log(person)
+    const getSingleMovie = movies.filter (el => el.fields.category.fields.name === person);
+    // console.log(getSingleMovie)
+    // console.log(movies)
+    // console.log(person)
 
     return (
         <div className='post-container'>

@@ -8,7 +8,7 @@ function AllMovies({movies}) {
             <div className="movie-grid">
                  {movies.map((item, index) =>
                 (<NavLink to={`/SingleMovie/${item.fields.id}`}>
-                <img key={index}  src={item.fields.Poster.fields.url} alt="Movies"
+                <img key={index}  src={item.fields.poster.fields.file.url} alt="Movies" width='25%'
                  className="poster-grid"/></NavLink>))} 
             </div>
             
