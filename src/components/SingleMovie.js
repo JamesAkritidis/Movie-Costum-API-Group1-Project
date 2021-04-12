@@ -4,20 +4,17 @@ import Post from './Post';
 
 function SingleMovie({movies}) {
 
-
     const {id} = useParams();
-    // console.log({id});
 
-    const getSingleMovie = movies.filter(el => el.fields.id === id);
-
-      console.log(getSingleMovie)
+    const movie = movies.find(el => el.fields.id === Number(id));
+    console.log(movie)
 
     return (
         <div className="post-container">
-            <div>
-                {getSingleMovie.map((item, index) => <Post item={item} key={index} /> )}
-            </div>
-            
+            <div >
+            <Post item={movie} />
+        </div>
+
         </div>
     )
 }

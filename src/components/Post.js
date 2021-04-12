@@ -3,10 +3,10 @@ import '../Post.css'
 
 function Post({item}) {
     return (
-
-
         <div className="post-container">
-            <div className="post">
+            {
+            item &&
+            (<div className="post">
                 <div className="trailer-container">
                     <iframe title="The Big Lebowski" src={item.fields.trailers} width="560" height="315"></iframe>
                 </div>
@@ -14,13 +14,13 @@ function Post({item}) {
                     <div className="title-container">
                         <div className="movieTitle">{item.fields.title}</div>
                     </div>
-                    <div className="genre">Genre: {item.fields.genre}</div>
-                    <div className="rating">Rating: {item.fields.imdbRating}</div>
-                    <div className="dir">Director: {item.fields.director}</div>
-                    <div className="act">Actors: {item.fields.cast}</div>
+
+                    <div className="list">Genre: {item.fields.genre}</div>
+                    <div className="list">Rating: {item.fields.imdbRating}</div>
+                    <div className="list">Director: {item.fields.director}</div>
+                    <div className="list">Actors: {item.fields.cast}</div>
                 </div>
-            </div>
-            
+            </div>)}
         </div>
     )
 }

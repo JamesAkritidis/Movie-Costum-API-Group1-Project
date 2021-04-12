@@ -26,8 +26,13 @@
 }
 
 .movieTitle {
-  font-size: 7rem;
-  color: rgb(46, 221, 206);
+
+  font-size: 4.5rem;
+  color: rgb(182, 54, 92);
+}
+.list {
+  font-size: 1.8rem;
+
 }
 
 .genre {
