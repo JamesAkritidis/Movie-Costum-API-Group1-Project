@@ -1,6 +1,7 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import Post from './Post';
+import '../Post.css'
 
 function SingleCategory({movies}) {
 
@@ -8,9 +9,11 @@ function SingleCategory({movies}) {
     // console.log(person)
 
     const getSingleMovie = movies.filter (el => el.fields.category.fields.name === person);
+
     // console.log(getSingleMovie)
     // console.log(movies)
     // console.log(person)
+
 
     return (
         <div className='post-container'>
