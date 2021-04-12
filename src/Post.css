@@ -1,6 +1,9 @@
 .post-container {
   margin-top: 10rem;
   margin-bottom: 10rem;
+ padding-top: 15rem;
+ padding-bottom: 10rem;
+ padding-left: 10rem;
 }
 
 .post {
@@ -50,3 +53,19 @@
 .act{
   font-size: 2.5rem;
 }
+
+.img {
+  text-align: center;
+  max-height: 80%;
+  width: 150%;
+  /* object-fit: cover; */
+}
+
+.img2 {
+  background-position: center;
+background-size: cover;
+background-image: url(./movie_pics_small_size/lonely.jpg);
+opacity: 1;
+
+}
+
