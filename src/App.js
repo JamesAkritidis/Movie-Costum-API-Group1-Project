@@ -6,7 +6,8 @@ import NavBar from "./components/NavBar"
 import Landingpage from "./components/Landingpage"
 import AllMovies from "./components/AllMovies"
 import SingleCategory from "./components/SingleCategory"
-
+import './App.css';
+import './Main.css'
 
 
   function App() {
