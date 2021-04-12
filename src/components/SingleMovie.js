@@ -1,12 +1,11 @@
 import React from 'react'
 import {useParams} from 'react-router-dom';
 import Post from './Post';
-import '../Post.css'
 
 function SingleMovie({movies}) {
 
     const {id} = useParams();
-    
+
     const movie = movies.find(el => el.fields.id === Number(id));
     console.log(movie)
 
@@ -15,7 +14,7 @@ function SingleMovie({movies}) {
             <div >
             <Post item={movie} />
         </div>
-            
+
         </div>
     )
 }

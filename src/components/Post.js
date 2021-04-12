@@ -14,6 +14,7 @@ function Post({item}) {
                     <div className="title-container">
                         <div className="movieTitle">{item.fields.title}</div>
                     </div>
+
                     <div className="list">Genre: {item.fields.genre}</div>
                     <div className="list">Rating: {item.fields.imdbRating}</div>
                     <div className="list">Director: {item.fields.director}</div>
