@@ -11,7 +11,7 @@ function SingleCategory({movies}) {
     const getSingleMovie = movies.filter (el => el.fields.category.fields.name === person);
 
     // console.log(getSingleMovie)
-    // console.log(movies)
+     console.log(movies)
     // console.log(person)
 
 

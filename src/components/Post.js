@@ -14,10 +14,10 @@ function Post({item}) {
                     <div className="title-container">
                         <div className="movieTitle">{item.fields.title}</div>
                     </div>
-                    <div>Genre: {item.fields.genre}</div>
-                    <div>Rating: {item.fields.imdbRating}</div>
-                    <div>Director: {item.fields.director}</div>
-                    <div>Actors: {item.fields.cast}</div>
+                    <div className="genre">Genre: {item.fields.genre}</div>
+                    <div className="rating">Rating: {item.fields.imdbRating}</div>
+                    <div className="dir">Director: {item.fields.director}</div>
+                    <div className="act">Actors: {item.fields.cast}</div>
                 </div>
             </div>
             

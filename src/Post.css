@@ -26,6 +26,22 @@
 }
 
 .movieTitle {
-  font-size: 14.5rem;
+  font-size: 7rem;
   color: rgb(46, 221, 206);
+}
+
+.genre {
+  font-size: 2.5rem;
+}
+
+.rating {
+  font-size: 2.5rem;
+}
+
+.dir{
+  font-size: 2.5rem;
+}
+
+.act{
+  font-size: 2.5rem;
 }
