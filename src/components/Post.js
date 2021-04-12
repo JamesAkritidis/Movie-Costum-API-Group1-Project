@@ -12,7 +12,7 @@ function Post({item}) {
                 </div>
                 <div className="movie-details">
                     <div className="title-container">
-                        <div className="movieTitle">{item.field.title}</div>
+                        <div className="movieTitle">{item.fields.title}</div>
                     </div>
                     <div>Genre: {item.fields.genre}</div>
                     <div>Rating: {item.fields.imdbRating}</div>

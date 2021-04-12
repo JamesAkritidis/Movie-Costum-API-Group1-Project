@@ -4,7 +4,7 @@ const Landingpage = () => {
     return (
         // lp = landingpage
         <div className="lp-container"> 
-            <NavLink to='../'>
+            <NavLink to='./AllMovies'>
               <h1 className="lp-text">Our Favorite Movies</h1>
             </NavLink>
         </div>

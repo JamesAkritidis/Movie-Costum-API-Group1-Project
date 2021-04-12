@@ -8,7 +8,7 @@ function SingleCategory({movies}) {
     const {person} = useParams ();
     console.log(person)
 
-    const getSingleMovie = movies.filter (el => el.fields.Category === person);
+    const getSingleMovie = movies.filter (el => el.fields.category.fields.name === person);
     console.log(getSingleMovie)
     console.log(movies)
     console.log(person)
