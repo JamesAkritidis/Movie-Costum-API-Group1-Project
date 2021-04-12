@@ -11,7 +11,9 @@ const NavBar = () => {
             
             <h3><NavLink className="navigation-link" to='/'>Home</NavLink></h3>
             <h3><NavLink className="navigation-link" to='/AllMovies'>All Movies</NavLink></h3>
+
             <h3><NavLink className="navigation-link" to='/singlecategory/Ahmad'>Ahmad</NavLink></h3>
+
             <h3><NavLink className="navigation-link" to='/SingleCategory/Jan'>Jan</NavLink></h3>
             <h3><NavLink className="navigation-link" to='/SingleCategory/Dimitris'>Dimitris</NavLink></h3>
             </div>
