@@ -11,11 +11,18 @@ function SingleMovie({movies}) {
     console.log(movie)
 
     return (
+        <div className="img2">
         <div className="post-container">
+            
             <div >
+            {/* <div className="img">
+                <img src={cinema} width="60%"></img>
+            </div> */}
             <Post item={movie} />
         </div>
 
+
+        </div>
         </div>
     )
 }
