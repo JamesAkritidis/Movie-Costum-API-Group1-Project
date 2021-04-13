@@ -1,7 +1,7 @@
 import React from 'react'
 import {useParams} from 'react-router-dom';
 import Post from './Post';
-import cinema from '../movie_pics_small_size/cinema.jpg';
+import cinema from './movie_pics_small_size/cinema.jpg'
 
 function SingleMovie({movies}) {
 
