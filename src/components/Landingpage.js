@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import cinema from './movie_pics_small_size/cinema.jpg'
 const Landingpage = () => {
     return (
         // lp = landingpage
