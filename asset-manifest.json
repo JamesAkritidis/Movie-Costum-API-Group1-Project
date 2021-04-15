@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/movie-costum-api-group1-project/static/css/main.fc5bb7cc.chunk.css",
-    "main.js": "/movie-costum-api-group1-project/static/js/main.716d07f2.chunk.js",
-    "main.js.map": "/movie-costum-api-group1-project/static/js/main.716d07f2.chunk.js.map",
+    "main.css": "/movie-costum-api-group1-project/static/css/main.c8f72187.chunk.css",
+    "main.js": "/movie-costum-api-group1-project/static/js/main.101afc1e.chunk.js",
+    "main.js.map": "/movie-costum-api-group1-project/static/js/main.101afc1e.chunk.js.map",
     "runtime-main.js": "/movie-costum-api-group1-project/static/js/runtime-main.f0692a1a.js",
     "runtime-main.js.map": "/movie-costum-api-group1-project/static/js/runtime-main.f0692a1a.js.map",
     "static/js/2.e1f55295.chunk.js": "/movie-costum-api-group1-project/static/js/2.e1f55295.chunk.js",
     "static/js/2.e1f55295.chunk.js.map": "/movie-costum-api-group1-project/static/js/2.e1f55295.chunk.js.map",
     "index.html": "/movie-costum-api-group1-project/index.html",
-    "static/css/main.fc5bb7cc.chunk.css.map": "/movie-costum-api-group1-project/static/css/main.fc5bb7cc.chunk.css.map",
+    "static/css/main.c8f72187.chunk.css.map": "/movie-costum-api-group1-project/static/css/main.c8f72187.chunk.css.map",
     "static/js/2.e1f55295.chunk.js.LICENSE.txt": "/movie-costum-api-group1-project/static/js/2.e1f55295.chunk.js.LICENSE.txt",
     "static/media/cinema.0792d454.jpg": "/movie-costum-api-group1-project/static/media/cinema.0792d454.jpg",
     "static/media/Post.css": "/movie-costum-api-group1-project/static/media/lonely.46cfc1fe.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.f0692a1a.js",
     "static/js/2.e1f55295.chunk.js",
-    "static/css/main.fc5bb7cc.chunk.css",
-    "static/js/main.716d07f2.chunk.js"
+    "static/css/main.c8f72187.chunk.css",
+    "static/js/main.101afc1e.chunk.js"
   ]
 }
